@@ -1,0 +1,24 @@
+
+**** Build of configuration Release for project Ejemplo3 ****
+
+make all 
+Building file: ../src/Ejemplo3.cu
+Invoking: NVCC Compiler
+nvcc -O3 -gencode arch=compute_12,code=sm_12 -odir "src" -M -o "src/Ejemplo3.d" "../src/Ejemplo3.cu"
+nvcc --compile -O3 -gencode arch=compute_12,code=compute_12 -gencode arch=compute_12,code=sm_12  -x cu -o  "src/Ejemplo3.o" "../src/Ejemplo3.cu"
+Finished building: ../src/Ejemplo3.cu
+ 
+Building target: Ejemplo3
+Invoking: NVCC Linker
+nvcc  -link -o  "Ejemplo3"  ./src/Ejemplo3.o   
+Finished building target: Ejemplo3
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Release for project Ejemplo3 ****
+
+make all 
+make: No se hace nada para «all».
+
+**** Build Finished ****

@@ -1,0 +1,32 @@
+
+FUNCIONAMIENTO ALGORITMO:
+
+Hebras deben calcular hasta 18 el número de primos.
+
+ejecutará la funcion numero de primos (4 veces) 2,4,8,16
+
+En mpi para 2 procesos
+
+prime_number ( 2, 0, 2 );
+prime_number ( 2, 1, 2 ); --devuelve 1
+
+prime_number ( 4, 0, 2 );
+prime_number ( 4, 1, 2 ); --devuelve 2
+
+
+prime_number ( 8, 0, 2 );
+prime_number ( 8, 1, 2 );
+
+prime_number ( 16, 0, 2 );
+prime_number ( 16, 1, 2 );
+
+
+p=0 itera: 2,4,6,8,10,12,14,16
+
+p=1 itera: 3,5,7,9,11,13,15
+
+estrategia en cuda: 
+
+crear vector con numero de elementos igual al tope y rellenar con 1s y 0s los elementos.
+Contar el numero de unos del vector.Despues Reducción en cuda y devolver el numero entero que me calcule el numero de primos del tope
+
